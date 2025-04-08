@@ -8,6 +8,7 @@ class Solution:
 #the time complexity for the above code is O(n) because n is the number of digits that we're traversing.
 #the space complexity O(n), due to storing both the string and its reversed version.
 
+#more optimal solution
 class Solution:
     def ispalindrome(self,x:int)->bool:
         reversed=0
