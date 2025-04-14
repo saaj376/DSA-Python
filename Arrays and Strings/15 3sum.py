@@ -24,3 +24,27 @@ class Solution:
 
 #the time complexity is O(n²) because we're traversing through the list once and we're checking using a while loop again.
 #the space complexity is O(k) where k is the number of triplets we found.
+
+#Alternate solution if we ignore the space complexity
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        result=[]
+        lst=set()
+        for i in range(len(nums)):
+            left=i+1
+            right=len(nums)-1
+            while left<right:
+                total=nums[i]+nums[left]+nums[right]
+                if total==0:
+                    lst.add((nums[i],nums[left],nums[right]))
+                    left+=1
+                    right-=1
+                elif total<0:
+                    left+=1
+                else:
+                    right-=1
+        return list(lst)
+    
+#the time complexity is O(n²) because we're traversing through the list once and we're checking using a while loop again.
+#the space complexity is O(n²) because we're storing the triplets in a set and then converting it to a list.
