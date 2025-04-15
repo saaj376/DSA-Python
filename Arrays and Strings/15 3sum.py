@@ -29,7 +29,6 @@ class Solution:
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
-        result=[]
         lst=set()
         for i in range(len(nums)):
             left=i+1
