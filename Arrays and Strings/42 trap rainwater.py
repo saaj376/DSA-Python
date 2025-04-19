@@ -15,3 +15,4 @@ class Solution:
                 max_right = max(max_right, height[right])
                 water += max_right - height[right]
         return water
+#the time complexity is O(n) and the space complexity is O(1)
