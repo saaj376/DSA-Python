@@ -11,3 +11,4 @@ class Solution:
             result += count_map[odd_count - k]
             count_map[odd_count] += 1
         return result
+#the time complexity is O(n) and the space complexity is O(n)
