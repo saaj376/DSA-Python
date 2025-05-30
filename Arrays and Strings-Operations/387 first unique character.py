@@ -7,3 +7,6 @@ class Solution:
             if count[char]==1:
                 return i
         return -1
+    
+#the time complexity is O(n) where n is the length of the string
+#the space complexity is O(n) where n is the number of unique characters in the string
