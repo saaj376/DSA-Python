@@ -1,3 +1,4 @@
+from typing import List
 class Solution:
     def superPow(self, a: int, b: List[int]) -> int:
         num=int(''.join(str(x) for x in b))
